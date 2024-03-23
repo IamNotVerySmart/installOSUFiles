@@ -21,3 +21,5 @@ for file in os.listdir(download_path):
             skin_end_path = os.path.join(skin_path, file)
             shutil.move(start_path, skin_end_path)
             print(f"[{number}] found file: {file} was moved to {skin_path}")
+    else:
+        print(f"didn't found specified file.({beatmap}, {skin})")
